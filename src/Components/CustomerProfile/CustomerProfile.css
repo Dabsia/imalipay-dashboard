@@ -1,0 +1,60 @@
+
+.customerFormleftSection{
+    border-right: 1px solid #E5E5E5;
+    width: 50%;
+    padding-right: 2rem;
+
+}
+
+
+.customerProfileContainer{
+    margin-top: 1rem;
+    width: 100%;
+    background-color: #fff;
+    height: fit-content;
+    padding: 2rem;
+    display: flex;
+    
+    
+}
+
+.customerProfileHeader{
+    margin-bottom: 1rem;
+}
+
+.customerInfoContainer{
+    display: flex;
+}
+
+.nameContainer{
+    align-self: center;
+}
+
+.nameContainerName{
+    font-weight: 600;
+}
+
+.nameContainerNumber{
+    font-weight: 400;
+    color: #667085;
+}
+
+.customerInitialsContainer{
+    background: #F9F5FF;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-right: 1rem;
+    padding: 1rem;
+
+}
+
+.customerInitials{
+    color: #7F56D9;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+

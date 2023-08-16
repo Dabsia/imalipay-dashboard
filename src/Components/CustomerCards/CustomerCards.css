@@ -1,0 +1,7 @@
+.customerCardList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+    width: 100%;
+    grid-gap: 2rem;
+}

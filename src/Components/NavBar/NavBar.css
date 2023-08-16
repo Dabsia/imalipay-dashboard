@@ -1,0 +1,59 @@
+.NavigationBar {
+    width: 20%;
+    height: 100vh;
+    background-color: #fff;     
+    padding-top: 2rem;
+    border-right: 1.5px solid #E5E5E5;
+    position: fixed;
+}
+.imageContainer{
+    width: 60%;
+    margin: auto;
+}
+
+
+.logo{
+    width: 100%;
+    object-fit: cover;
+}
+
+.MenuParent{
+    width: 60%;
+    margin: auto;
+    margin-top: 2rem;
+    height: 80%;
+}
+
+.quickMenu{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .7rem;
+    line-height: 15px;
+    color: var(--quickMenuColor);
+}
+ul{
+    list-style: none;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.linkItem{
+    text-decoration: none;
+    color: #121212;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .85rem;
+    line-height: 19px;
+}
+.linkItem:focus{
+    font-weight: 600;
+}
+
+.navIcons{
+    height: .8rem;
+    margin-right: .4rem;
+}

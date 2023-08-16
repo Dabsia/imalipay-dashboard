@@ -1,0 +1,44 @@
+.paymentCard{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.paymentInfo{
+    display: flex;
+}
+
+.paymentDetails{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.paymentStat{
+    display: flex;
+}
+.paymentStatus{
+    background: #FEF3F2;
+    color: #B42318;
+    width: fit-content;
+    border-radius: 10px;
+    margin-left: .5rem;
+    padding: .2rem;
+}
+
+.paymentAmount{
+    align-self: center;
+}
+
+.paymentAmount{
+    color: #101010;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+.paymentDate{
+    color: #808080;
+}

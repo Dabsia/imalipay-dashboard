@@ -1,0 +1,38 @@
+.Card{
+    background: #FFFFFF;
+    border: 1px solid #EAECF0;
+    box-shadow: 0px 1px 12px rgba(16, 24, 40, 0.1);
+    border-radius: 8px;
+    width: 32%;
+    padding: 1rem;
+    height: 9rem;
+}
+
+.cardImag{
+    width: 2.4rem;
+}
+
+.cardDetails{
+    font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: .8rem;
+        line-height: 20px;
+        color: #667085;
+        margin-top: .5rem;
+}
+
+.money{
+    font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 44px;
+        /* identical to box height, or 138% */
+    
+        letter-spacing: -0.02em;
+    
+        /* Gray/900 */
+    
+        color: #101828;
+}

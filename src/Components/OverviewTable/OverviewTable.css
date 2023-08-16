@@ -1,0 +1,87 @@
+.divTable{
+    margin-top: 2rem;
+}
+
+.checkBoxContainer{
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+.table{
+    width: 100%;
+}
+.headers{
+    background-color: #f3f3f3;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+.tableHeader{
+    color: #707070;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: .7rem;
+    line-height: 16px;
+    width: 20%;
+}
+.successContainer{
+    display: flex;
+    background: #ECFDF3;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    
+}
+.successText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .7rem;
+    line-height: 18px;
+    text-align: center;
+    color: #027A48;
+}
+.voucher{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 20px;
+    color: #101010;
+    
+}
+.amount{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .8rem;
+    line-height: 20px;
+    
+    color: #101828;
+}
+.rowData{
+    background-color: #fff;
+    margin-bottom: .2rem;
+}
+.customerBox{
+    display: flex;
+    
+    justify-content: space-between;
+}
+.customerName{
+    color: #101828;
+    font-size: .7rem;
+}
+.checkBoxContainer
+
+.customerNumber{
+    color: #667085;
+    font-size: .7rem;
+}
+.customerDetails{
+    margin-left: .5rem ;
+}
