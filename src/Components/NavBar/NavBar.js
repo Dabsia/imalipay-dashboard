@@ -32,27 +32,38 @@ const NavBar = () => {
                     <li onClick={addActiveLink}>
                         <NavLink style={{
                             fontWeight: (linkActive ? '600' : '400')
-                        }} className='linkItem' to='/'>
+                        }} className={({ isActive }) =>
+                            isActive ? "linkItem" : "navLink"} to='/'>
                             <img src={dashboard} className="navIcons" alt='dashboard' />
                             <span>Overview</span>
                         </NavLink>
                     </li>
                     <li onClick={removeActiveLink}>
-                        <NavLink className='linkItem' to='/customers'>
+                        <NavLink className={({ isActive }) =>
+                            isActive ? "linkItem" : "navLink"} to='/customers'>
                             <img src={userIcon} className="navIcons" alt='userIcon' />
                             <span>Customers</span>
                         </NavLink>
                     </li>
                     <li onClick={removeActiveLink}>
-                        <NavLink className='linkItem' to='/defaulters'>
+                        <NavLink className={({ isActive }) =>
+                            isActive ? "linkItem" : "navLink"} to='/defaulters'>
                             <img src={wallet} className="navIcons" alt='wallet' />
                             <span>Defaulters</span>
                         </NavLink>
                     </li>
                     <li onClick={removeActiveLink}>
-                        <NavLink className='linkItem' to='/fulfilments'>
+                        <NavLink className={({ isActive }) =>
+                            isActive ? "linkItem" : "navLink"} to='/fulfilments'>
                             <img src={sell} className="navIcons" alt='sell' />
                             <span>Fulfilment</span>
+                        </NavLink>
+                    </li>
+                    <li onClick={removeActiveLink}>
+                        <NavLink className={({ isActive }) =>
+                            isActive ? "linkItem" : "navLink"} to='/summary'>
+                            <img src={sell} className="navIcons" alt='sell' />
+                            <span>Account Summary</span>
                         </NavLink>
                     </li>
                 </ul>
@@ -62,3 +73,5 @@ const NavBar = () => {
 }
 
 export default NavBar
+
+

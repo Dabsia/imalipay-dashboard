@@ -15,7 +15,7 @@ const FulfilmentProfile = () => {
     return (
         <div className='customerProfileContainer' >
             <div className='customerFormleftSection' >
-                <h1 className='customerProfileHeader' >Customer's Profile</h1>
+                <h1 className='summaryText' >Customer's Profile</h1>
                 <div className='customerInfoContainer' >
                     <div className='customerInitialsContainer' >
                         <p className='customerInitials' >{`${customerFirstName}${customerLastName}`}</p>

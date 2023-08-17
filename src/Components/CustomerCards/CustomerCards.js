@@ -25,7 +25,7 @@ const CustomerCards = () => {
     ]
     return (
         <div>
-            <h1>Customers</h1>
+            <h1 className='summaryText' >Customers</h1>
             <div className='customerCardList' >
                 {
                     cardsLength.map((card, id) => {

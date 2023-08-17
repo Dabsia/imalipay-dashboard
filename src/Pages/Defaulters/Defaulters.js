@@ -7,7 +7,7 @@ import DefaultersTable from '../../Components/DefaultersTable/DefaultersTable'
 const Defaulters = () => {
     return (
         <div>
-            <h2 className='defaultersHeader' >Defaulters</h2>
+            <h2 className='summaryText' >Defaulters</h2>
             <DefaultersCards />
             <DefaultersTable />
         </div>

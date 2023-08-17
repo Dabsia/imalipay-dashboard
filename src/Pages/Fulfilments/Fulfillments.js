@@ -4,7 +4,7 @@ import FulfilmentsTable from '../../Components/FulfilmentsTable/FulfilmentsTable
 const Fulfillments = () => {
     return (
         <div>
-            <h1>Fulfillments</h1>
+            <h1 className='summaryText' >Fulfillments</h1>
             <FulfilmentsTable />
         </div>
     )
