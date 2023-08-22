@@ -1,0 +1,92 @@
+.connectAccountOverlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.9);
+}
+
+.createAccountCard{
+    height: 50%;
+    width: 35%;
+    border-radius: 1rem;
+    background-color: #fff;
+    position: relative;
+    padding:  1.5rem;
+}
+
+.connectAcctHeading{
+    font-family: Inter;
+    color: #222;
+}
+
+
+.connectAcctText{
+    color: #808080;
+    font-family: Inter;
+}
+
+.closeModalContainer{
+    background-color: red;
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 100%;
+    align-self: flex-end;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moneyActions{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wallet{
+    margin: auto;
+    height: 4rem;
+}
+
+.walletContainer{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.backModal{
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.modalButton{
+    display: block;
+    width: 100%;
+    height: 4rem;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #EAECF0;
+    font-size: 1rem;
+}
+
+.uploadStatementBtn{
+    background-color: #fff;
+    border: 1px solid #222;
+}

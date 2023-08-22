@@ -1,4 +1,5 @@
 import DataTable from "react-data-table-component";
+import { useRef } from "react";
 import { summaryData } from "./SummaryData";
 
 
@@ -56,6 +57,11 @@ const SummaryTable = () => {
 
     ]
 
+    const tableRef = useRef(null)
+
+    console.log(tableRef)
+
+
 
 
     return (
@@ -69,7 +75,7 @@ const SummaryTable = () => {
                 highlightOnHover
                 pointerOnHover
                 responsive
-
+                ref={tableRef}
 
             />
         </div>

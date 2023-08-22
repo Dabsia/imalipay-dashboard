@@ -27,10 +27,39 @@
 }
 .exportBtn{
     background: #FFFFFF;
+    outline: none;
     border: 1px solid #DCDCDC;
     height: 2.5rem;
     width: 10%;
     font-size: .8rem;
     cursor: pointer;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 780px){
+    .exportBtn {
+            
+            width: 20%;
+        }
+}
+
+@media screen and (max-width: 700px) {
+    .searchContainer{
+        flex-direction: column;
+    }
+    .searchBox{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+        .exportBtn {
+    
+            width: 20%;
+        }
+}
+
+@media screen and (max-width: 620px) {
+    .exportBtn {
+
+        width: 40%;
+    }
 }

@@ -58,3 +58,17 @@
     font-size: 1.2rem;
 }
 
+@media screen and (max-width: 980px){
+    .customerProfileContainer{
+        flex-direction: column;
+    }
+    
+    .customerFormleftSection{
+        border-right: none;
+        width: 100%;
+        padding-right: 0;
+        
+
+    }
+
+}

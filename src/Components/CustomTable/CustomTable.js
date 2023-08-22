@@ -1,10 +1,20 @@
+import { useState } from "react";
 import DataTable from "react-data-table-component";
 import { OverviewTableData } from "../OverviewTable/OverviewTableData";
 import './CustomTable.css'
 
+
 import Search from "../Search/Search";
 
 const CustomTable = () => {
+
+    const [filterText, setFilterText] = useState('');
+    const filteredItems = OverviewTableData.filter(
+        item => item.name && item.name.toLowerCase().includes(filterText.toLowerCase()),
+    );
+
+
+
     const columns = [
         {
             name: 'NAME',
@@ -60,10 +70,10 @@ const CustomTable = () => {
 
     return (
         <div className="dataTableParent" >
-            <Search placeholder={"Search for Customer's name"} />
+            <Search filterText={filterText} setFilterText={setFilterText} placeholder={"Search for Customer's name"} />
             <DataTable
                 columns={columns}
-                data={OverviewTableData}
+                data={filteredItems}
                 selectableRows
                 fixedHeader
                 pagination

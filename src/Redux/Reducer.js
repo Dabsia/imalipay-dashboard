@@ -883,7 +883,9 @@ const initialState = {
         },
     ],
     singleCustomer: {},
-    singleFulfilment: {}
+    singleFulfilment: {},
+    isConnectAccountModal: false,
+    isMobileAccountModalOpen: false
 }
 
 
@@ -896,6 +898,25 @@ export const userReducer = (state = initialState, action) => {
         case userTypes.ADMIN_GET_SINGLE_FULFILMENT:
             return {
                 ...state, singleFulfilment: action.payload
+            }
+        // Account Modal
+        case userTypes.OPEN_CONNECT_ACCOUNT_MODAL:
+            return {
+                ...state, isConnectAccountModal: true, isMobileAccountModalOpen: false,
+            }
+        case userTypes.CLOSE_CONNECT_ACCOUNT_MODAL:
+            return {
+                ...state, isConnectAccountModal: false,
+            }
+
+        // Mobile Modal
+        case userTypes.OPEN_MOBILE_ACCOUNT_MODAL:
+            return {
+                ...state, isMobileAccountModalOpen: true,
+            }
+        case userTypes.CLOSE_MOBILE_ACCOUNT_MODAL:
+            return {
+                ...state, isMobileAccountModalOpen: false, isConnectAccountModal: true,
             }
         default:
             return state

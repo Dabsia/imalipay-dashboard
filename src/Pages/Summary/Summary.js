@@ -5,14 +5,26 @@ import account_circle_white from '../../Assets/account_circle_white.png'
 import './Summary.css'
 import SummaryCards from '../../Components/SummaryCards/SummaryCards'
 import SummaryTable from '../../Components/SummaryTable/SummaryTable'
+import ConnectAccount from '../../Components/ConnectAccount/ConnectAccount'
+import { openConnectAccountModal } from '../../Redux/Actions'
+import { useDispatch, useSelector } from 'react-redux'
 
 const Summary = () => {
+
+    const dispatch = useDispatch()
+
+    const isConnectAccountModalOpen = useSelector(state => state.user.isConnectAccountModal)
+
+    const openModal = () => {
+        dispatch(openConnectAccountModal())
+    }
 
 
 
     return (
         <div>
-            <div className='summaryHeadingContainer' >
+            {/*isConnectAccountModalOpen && <ConnectAccount />*/}
+            {/*<div className='summaryHeadingContainer' >
                 <p className='summaryText' >Account Summary</p>
                 <div className='summaryBtnHolders' >
                     <div className='summaryBtn' >
@@ -23,13 +35,13 @@ const Summary = () => {
                         <img className='btnImg' src={description} alt='icon' />
                         <p  >Upload CSV</p>
                     </div>
-                    <div className='summaryBtn connectAcct' >
+                    <div onClick={openModal} className='summaryBtn connectAcct' >
                         <img className='btnImg' src={account_circle_white} alt='icon' />
                         <p  >Connect Account</p>
                     </div>
                 </div>
 
-            </div>
+    </div>*/}
             <SummaryCards />
             <div className='summaryHr' />
             <SummaryTable />

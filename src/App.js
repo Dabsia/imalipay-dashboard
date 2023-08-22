@@ -11,6 +11,7 @@ import Fulfillments from './Pages/Fulfilments/Fulfillments';
 import Fulfilment from './Pages/Fulfilment/Fulfilment';
 import Summary from './Pages/Summary/Summary';
 
+
 function App() {
   return (
     <div className='app'>
@@ -26,6 +27,7 @@ function App() {
             <Route path='/defaulters' element={<Defaulters />} />
             <Route path='/customer/:id' element={<Customer />} />
             <Route path='/summary' element={<Summary />} />
+
           </Routes>
         </div>
       </div>
